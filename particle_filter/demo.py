@@ -22,7 +22,6 @@ robot_params = {
     'init_yaw': np.random.uniform(0, np.math.pi*2.),
     'max_fv': max_fv, 
     'max_av': max_av,
-    'N_point_cloud': 200,
 }
 
 #initialise particle filter parameters
@@ -43,5 +42,5 @@ sim (sim_params,
      robot_params,
      particle_filter_params,
      sensor_params, 
-     is_animate = False,
-     is_save_gif = True)
+     is_animate = True,
+     is_save_gif = False)
